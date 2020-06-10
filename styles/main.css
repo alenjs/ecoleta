@@ -1,0 +1,30 @@
+ /* arrumar os itens na ordem em que aparece no código*/
+
+:root{ /* referencia a raiz do doc html*/
+    --title-color: #322153; /* cria uma variável para cor, maneira pratica de repetir uma cor */
+    --primary-color: #34cb79;
+} 
+
+* { /* o coringa '*' referencia todos os outros seletores de elementos*/
+margin: 0; /*zera todos os espaços não definidos*/
+padding:0; /*zera todos os paddings não definidos*/
+}
+
+html{
+    font-family: 'Roboto', sans-serif; 
+}
+
+body{
+    /* código de cor em hexadecimal os 2'ff'Red 'ff' green 'ff' blue compoem a cor*/
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased; /*melhora o aspecto da fonte*/
+}
+
+a{
+    text-decoration: none; /* tira o sublinhado */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color); /* cor padrao lilás*/
+}

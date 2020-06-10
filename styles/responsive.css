@@ -1,0 +1,40 @@
+
+/*RESPONSIVIDADE conhecida como media query*/
+
+
+@media(max-width: 900px) { /* na largura de 900px aplica-se as seguintes regras*/
+    #page-home{
+        background-position-x: 70vw; /*o conteúdo não encavala (passa por cima) a imagem*/   
+    }
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a{
+        position: absolute; /*gera nova posição para o elemento 'a'*/
+        bottom: 48px; /*alinha abaixo na nova posição*/
+        left: 50%;
+        transform: translateX(-50%); /*faz com que ache o ponto médio para centralizar 'header a'*/
+    }
+    #page-home main{
+        align-items: center;
+    }
+    
+    #page-home main h1{ /*ajuste para mobiles menores de 400px*/
+        font-size: 30px;
+    }
+}
+
+@media (min-width:1700px){ /*de 1700px pra cima aplica-se estas regras*/
+    #page-home{
+        background-position-x: 40vw; /*o conteúdo não encavala (passa por cima) a imagem*/   
+    }
+}
+
+@media (max-heigt:760px){ /*até a altura máxima de 760px*/
+    #page-home{
+        background-position-x: 200px; /*o conteúdo não encavala (passa por cima) a imagem*/   
+    }
+    
+}
+
