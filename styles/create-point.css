@@ -1,0 +1,124 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px; /*se chegar até isso ele para*/
+    margin: 0 auto; /*cima/baixo seja zero e lateriais seja preenchido auto*/
+}
+
+#page-create-point header {
+    margin-top: 48px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#page-create-point header a {
+    color: var(--title-color); /* do main.css*/
+    font-weight: bold;
+    display: flex; /*coloca um elemento ao lado do outro*/
+    align-items: center;
+}
+
+#page-create-point header a span{
+    margin-right: 16px; /* margen direita da imagem */
+    background-image: url("../assets/arrow-left.svg" ); 
+    /*imagens só aparecem quando define as propriedades de width, height e display*/
+    /*dica: para mudar a cor de imagens svg, abre a imagem e  muda a tag stroke para cor desejada*/
+    width: 20px;
+    height: 24px;
+    display: flex; 
+}
+
+form {
+    background-color: white;
+    margin: 80px;
+    padding: 64px; /*preenchimento interno da caixa*/
+    border-radius: 8px; /*cantos arredondados*/
+    margin-top: 80px;
+    width: 730px; /*tamanho máximo da caixa, interage com o padding 
+    encaixando os elementos por dentro, não expandindo a caixa*/
+}
+
+form h1{
+    font-size: 36px;
+}
+
+form fieldset{
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend h2{
+font-size: 24px;
+}
+
+form .field {
+    display: flex;
+    flex: 1; /*preenche o espaço com os campos*/
+    flex-direction: column; /*dentro da div.field ficam em coluna*/
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+    
+}
+
+form input,
+ form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+   border-radius: 8px;
+}
+form select{
+    /*interface mais limpa, usa o campo select nativo para chrome, mozila(moz)  e outros navegadores*/
+    -webkit-appearance: none; /**/
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field {
+    /* dentro do field-grupo identifica dois .field na mesma linha (.field + .field) 
+    e aplica a formatação no último elemento da direita, neste caso 'numero' e 'cidade'. 
+    (ver video dia 02 - 00:57min). 
+    Foi usado para formatar 'endereço de número' e 'estado de cidade' na mesma linha 
+    dentro do formulário, através da adição de uma margem à esquerda em número e em cidade.
+    Inspecionar elemento para ver que as margens foram adicionadas ao elemento certo.
+    Bem complexo visualizar desta forma, fazer com cuidado. Estudar depois as regras CSS
+    */
+    margin-left: 24px;
+}
+
+form button{
+    color: white;
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: background-color 400ms; 
+}
+
+form button:hover{
+    background-color: #2fb86e ;
+
+}
+
+
+
+
+
+
+
+
+
+

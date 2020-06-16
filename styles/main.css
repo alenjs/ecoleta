@@ -8,6 +8,7 @@
 * { /* o coringa '*' referencia todos os outros seletores de elementos*/
 margin: 0; /*zera todos os espaços não definidos*/
 padding:0; /*zera todos os paddings não definidos*/
+box-sizing: border-box; /*tamanho máximo será o da borda para todos*/
 }
 
 html{
